@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { loadJsonFile, filterDuplicates, createCleanData, saveCleanJson } = require('../app');  // replace with your actual file name
+const { loadJsonFile, filterDuplicates, createCleanData, saveCleanJson } = require('../app'); 
 
 jest.mock('fs');
 
@@ -31,7 +31,7 @@ describe('filterDuplicates', () => {
 });
 
 describe('createCleanData', () => {
-    // We'll just test that it doesn't throw an error. A more detailed test would depend on your specific application logic.
+    // Test that it doesn't throw an error.
     test('should not throw an error', () => {
         fs.readFileSync.mockReturnValue(JSON.stringify({ versions: [] }));
 
@@ -39,3 +39,4 @@ describe('createCleanData', () => {
     });
 });
 
+//TODO: Fix console.log error & make these tests more robust 
