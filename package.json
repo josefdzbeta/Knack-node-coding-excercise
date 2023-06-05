@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "jest"
+    "test": "jest",
+    "doc": "jsdoc -c jsdoc.json"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "homepage": "https://github.com/josefdzbeta/Knack-node-coding-excercise#readme",
   "devDependencies": {
     "jest": "^29.5.0",
+    "jsdoc": "^4.0.2",
     "nodemon": "^2.0.22"
   }
 }
