@@ -63,7 +63,7 @@ const createCleanData = () => {
  */
 const saveCleanJson = (cleanData) => {
     try {
-        fs.writeFileSync("./clean_application.json", JSON.stringify(cleanData, null, 2));
+        fs.writeFileSync("./assets/clean_application.json", JSON.stringify(cleanData, null, 2));
     } catch (error) {
         console.error(`Error writing to file: ${error}`);
         throw error;
