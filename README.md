@@ -1,27 +1,93 @@
-## Remove Duplicates From Mock Knack Application Schema
-
-Knack is a no-code platform that includes an online database. Knack users will at times, through unexpected API usage or an unknown bug, corrupt their application schemas. One common issue they may run into is having duplicate fields and/or objects in their application schema. These duplicates cannot be removed by the Knack UI and lead to TypeErrors and other problems.
+# Knack - Take home excercise
 
 The purpose of this coding exercise is to create a Node.js application that can programmatically remove all duplicate fields and objects from the given mock application schema and output a new sanitized version.
 
-The "mock_application.json" file in this repository contains data which represents an actual Knack application schema including all currently existing properties. Your code should process the data, remove any duplicates, and output a new JSON file "clean_application.json" which retains all other properties of the Knack application.
+## Table of Contents
+- [Getting Started](#getting-started)
+- [Requisites](#requisites)
+- [Usage](#usage)
+- [Testing](#testing)
+- [Functions](#functions)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Within a standard Knack application there is a `versions` property which has 2 collections:
-1. `objects`: an array of Knack "objects" which contains "fields"
-2. `scenes`: an array of Knack "scenes" which contains "views"
+## Getting Started
 
-### Requirements
-- The code should be written in Javascript or Typescript and utilize the Node.js framework
-- We expect tests (unit tests on business logic, etc. - whatever you are comfortable with)
-- We expect to see documentation in the form of a README
-- We're looking for code that would be easy to maintain
-- We're looking for code that would scale
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Time
-We understand that you are busy and programming projects can take a long time. We advise spending 2 hours on the exercise and seeing where you get. If there are still open requirements at the end of the 2 hour period, feel free to outline what it would take to complete those in TODO comments inline in the code, or a list of notes on what you'd need to do finish things up. If you want to keep working and take things over the finish line, great.
+### Prerequisites
 
-### Notes
-- Leveraging 3rd party libraries/modules is perfectly fine
+Make sure you have Node.js installed on your machine. If not, you can download it [here](https://nodejs.org/en/download/).
 
-### How to submit your solution
-- Please send us a zip or a tar of the `node-coding-exercise-master` directory which should include your application
+### Requisites
+
+The code should be written in Javascript or Typescript and utilize the Node.js framework
+We expect tests (unit tests on business logic, etc. - whatever you are comfortable with)
+We expect to see documentation in the form of a README
+We're looking for code that would be easy to maintain
+We're looking for code that would scale
+
+### Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/josefdzbeta/Knack-node-coding-excercise.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd knack-node-coding-exercise
+    ```
+
+3. Install the dependencies:
+
+    ```bash
+    npm install
+    ```
+## Usage
+
+To run the script, use the following commands:
+
+    ```bash
+    node app.js
+    ```
+    ```bash
+    npm run knack
+    ```
+
+## Testing
+
+The script has a series of Jest tests. Run them using:
+
+    ```bash
+    npm run test
+    ```
+
+## Functions
+
+Here are the main functions in the script:
+
+- `loadJsonFile()`: This function reads and parses JSON data from `mock_application.json`.
+
+- `filterDuplicates(dataList)`: This function removes duplicate entries from the given array `dataList`, based on the `key` property.
+
+- `createCleanData()`: This function loads JSON data from a file using `loadJsonFile()`, filters out duplicate entries using `filterDuplicates()`, and returns the cleaned data.
+
+- `saveCleanJson(cleanData)`: This function writes the cleaned data to `clean_application.json` in a human-readable format.
+
+A detailed documentation of all the functions used in the project can be found in the JSDoc documentation. Navigate to the [JSDoc documentation](./documentation/index.html) for more information.
+
+## Contributing
+
+Any feedback regarding this exercise is greatly appreciated.
+
+## License
+
+This project is licensed under the GNU v3 License - see the LICENSE file for more details.
+
+## Contact
+
+Jose Angel Fernandez Betancourt - jafbeta@outlook.com
