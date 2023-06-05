@@ -38,31 +38,31 @@ We're looking for code that would scale
 
 2. Navigate to the project directory:
 
-    ```bash
+    ```
     cd knack-node-coding-exercise
     ```
 
 3. Install the dependencies:
 
-    ```bash
+    ```
     npm install
     ```
 ## Usage
 
 To run the script, use the following commands:
 
-    ```bash
+    ```
     node app.js
     ```
-    ```bash
-    npm run knack
+    ```
+    npm run start
     ```
 
 ## Testing
 
 The script has a series of Jest tests. Run them using:
 
-    ```bash
+    ```
     npm run test
     ```
 
