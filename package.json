@@ -1,0 +1,28 @@
+{
+  "name": "coding-exercise-master",
+  "version": "1.0.0",
+  "description": "Remove Duplicates From Mock Knack Application Schema",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josefdzbeta/Knack-node-coding-excercise.git"
+  },
+  "keywords": [
+    "json",
+    "duplicates",
+    "sanitize",
+    "data"
+  ],
+  "author": "Jose Angel Fernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josefdzbeta/Knack-node-coding-excercise/issues"
+  },
+  "homepage": "https://github.com/josefdzbeta/Knack-node-coding-excercise#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
