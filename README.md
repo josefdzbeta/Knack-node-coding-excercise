@@ -30,14 +30,15 @@ We're looking for code that would scale
 
 ### Installation
 
+Note: Steps 1 and 2 are for cloning the repository. If you already have a local copy of the repository, you can skip these steps.
+
 1. Clone the repository:
 
     ```bash
     git clone https://github.com/josefdzbeta/Knack-node-coding-excercise.git
-    ```
+    
 
 2. Navigate to the project directory:
-
     ```
     cd knack-node-coding-exercise
     ```
@@ -49,18 +50,16 @@ We're looking for code that would scale
     ```
 ## Usage
 
-To run the script, use the following commands:
+- To run the script, you can use the following commands:
 
     ```
     node app.js
-    ```
-    ```
     npm run start
     ```
 
 ## Testing
 
-The script has a series of Jest tests. Run them using:
+- The script has a series of Jest tests. Run them using:
 
     ```
     npm run test
@@ -78,7 +77,7 @@ Here are the main functions in the script:
 
 - `saveCleanJson(cleanData)`: This function writes the cleaned data to `clean_application.json` in a human-readable format.
 
-A detailed documentation of all the functions used in the project can be found in the JSDoc documentation. Navigate to the [JSDoc documentation](./documentation/index.html) for more information.
+A detailed documentation of all the functions used in the project can be found in the JSDoc documentation. Navigate to the [JSDoc documentation](./documentation/index.html) and execute the index.html file for more information.
 
 ## Contributing
 
